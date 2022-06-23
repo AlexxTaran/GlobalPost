@@ -1,0 +1,21 @@
+@mixin text ($fw , $fz , $ln , $cl) {
+    font-size: $fz;
+    font-weight: $fw;
+    line-height: $ln;
+    color: $cl;
+}
+
+@mixin grid ($value , $gap) {
+    display: grid;
+    grid-template-columns: $value;
+    align-items: center;
+    gap: $gap;
+}
+
+@mixin flex ($wrap , $direction , $a-i , $j-c){
+    display: flex;
+    flex-wrap: $wrap;
+    flex-direction: $direction;
+    align-items: $a-i;
+    justify-content: $j-c;
+}
